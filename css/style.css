@@ -248,7 +248,7 @@ body {
 /* Sidebar */
 
 .sidebar {
-    width: 230px;
+    width: 220px;
     height: calc(100vh - 60px);
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     background-color: var(--main-bg-color);
@@ -265,7 +265,7 @@ body {
 }
 
 .sidebar.active:hover {
-    width: 250px;
+    width: 220px;
 }
 
 .sidebar ul li {
