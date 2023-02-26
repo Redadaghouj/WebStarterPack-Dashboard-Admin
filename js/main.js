@@ -24,6 +24,25 @@ function dropMenu(selector) {
 dropMenu(navAvatar);
 dropMenu(notificationBtn);
 
+// Mode Switch
+
+let modeSwitchBtn = document.querySelector(".mode-switch");
+
+modeSwitchBtn.addEventListener("click", () => {
+  if (document.body.classList.contains("dark")) {
+    document.body.classList.remove("dark");
+    modeSwitchBtn.firstElementChild.innerHTML = `<i class="fa-solid fa-moon"></i>`;
+  } else {
+    document.body.classList.add("dark");
+    modeSwitchBtn.firstElementChild.innerHTML = `<i class="fa-solid fa-sun"></i>`;
+  }
+});
+
+// Remove active class from sidebar in small screens
+
+// window.matchMedia("(max-width: 767px)").matches &&
+//   sidebar.classList.remove("active");
+
 // Chart
 
 let Visitors = [800, 320, 190, 250, 400, 600],
